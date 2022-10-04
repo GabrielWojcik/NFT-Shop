@@ -1,0 +1,88 @@
+.contaier {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.containerCards {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerCard {
+    display: flex;
+}
+
+.describe {
+    margin-left: 5%;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 28px;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.btnBuy {
+    width: 170px;
+    height: 58px;
+    border: none;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    border-radius: 100px;
+    margin-right: 35px;
+    cursor: pointer!important;
+}
+
+.btnAdd {
+    width: 171px;
+    height: 58px;   
+    color: #14D9E5;
+    border: 3px solid #14D9E6;
+    border-radius: 100px;
+    background: #191D29;
+    cursor: pointer!important;
+
+}
+
+.containerModal {
+    position: absolute;
+    top: 15%;
+    width: 10%;
+    height: 15vh;
+    background-color: red;
+}
+.bodyModal {
+    color: white;
+}
+.card {
+    border: 1px solid;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    border-color: #9DFE00;
+    width: 45%;
+}
+
+.contaierShortCard {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    cursor: pointer;
+}
+
+.shortCard {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: #9DFE00;
+}

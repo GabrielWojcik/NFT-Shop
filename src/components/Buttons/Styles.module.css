@@ -1,0 +1,38 @@
+.buttons {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
+.buttons button {
+    cursor: pointer;
+}
+
+.buttons p {
+    width: 50%;
+    font-size: 14px;
+}
+
+
+.btnBuyNft {
+    width: 170px;
+    height: 58px;
+    border: none;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    border-radius: 100px;
+    margin-right: 35px;
+    cursor: pointer!important;
+}
+.btnBuyNft:hover{
+    background: linear-gradient(99.46deg, #00ff2a -10.9%, #00eeff 97.14%);
+}
+
+.btnGalery {
+    width: 171px;
+    height: 58px;   
+    color: #14D9E5;
+    border: 3px solid #14D9E6;
+    border-radius: 100px;
+    background: #191D29;
+}

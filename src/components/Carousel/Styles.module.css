@@ -1,0 +1,25 @@
+.containerCard {
+   display: flex; 
+   justify-content: space-around;
+   /* margin-left: 2%; */
+   margin-top: 5%;
+}
+
+.card {
+    position: absolute;
+    width: 367px;
+    height: 214px;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    border-radius: 50px;
+    transform: translateY(70%);
+}
+
+#monkey {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#monkey:hover {
+    -webkit-filter: scale(1.5);
+    filter: scale(1.5);
+}
