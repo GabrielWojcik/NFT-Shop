@@ -15,9 +15,6 @@ export default function Shop() {
            <ShopCard />
            <ShopCard />
            <ShopCard />
-
-
-
         </div>
     )
 }

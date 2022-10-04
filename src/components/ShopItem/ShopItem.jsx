@@ -8,13 +8,15 @@ import Monkey from "../../../public/Обезьяна 1.png";
 import MonkeyCap from "../../../public/MonkeyCap.png";
 import MonkeyAngel from "../../../public/MonkeyAngel.png";
 
-export default function ShopItem() {
+export default function ShopItem({ openModal, setImageActiveShop, setImageActiveModal }) {
     const[imageActive, setImageActive] = useState(false)
     const[chagedImage, setchagedImage] = useState()
-    const [open, setOpen] = useState(false);
 
     
+    
     useEffect(() => {
+        // console.log('Image selected ->', chagedImage)
+        setImageActiveShop(chagedImage)
 
     },[chagedImage])
 
@@ -47,7 +49,7 @@ export default function ShopItem() {
                     Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
                     versions of Lorem Ipsum.
                     </p>
-                        <button onClick={() => setOpen(true)} className={styles.btnBuy}> BUY </button>
+                        <button onClick={() => openModal(true)} className={styles.btnBuy}> BUY </button>
 
                     <button className={styles.btnAdd}> ADD  </button>
                 </div>
@@ -59,6 +61,7 @@ export default function ShopItem() {
                     onClick={(e) => {
                         setchagedImage(e)
                         setImageActive(true)
+                        setImageActiveModal(true)
                     }}
                     src={MonkeyAngel}
                     width={100} 
@@ -71,6 +74,8 @@ export default function ShopItem() {
                     onClick={(e) => {
                         setchagedImage(e)
                         setImageActive(true)
+                        setImageActiveModal(true)
+
                     }}
                     src={MonkeyCap} 
                     width={100} 
@@ -83,6 +88,8 @@ export default function ShopItem() {
                     onClick={(e) => {
                         setchagedImage(e)
                         setImageActive(true)
+                        setImageActiveModal(true)
+
                     }}
                     src={Monkey} 
                     width={100} 
