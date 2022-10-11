@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    padding-left: 4%;
+    width: 100%;
+}
+
+.bar {
+    width: 3px;
+    height: 100vh;
+    background-color: #9DFE00;
+}
+
+#title-item {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#Title {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 128px;
+    line-height: 124px;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: 0;
+    margin-left: 5%;
+}
+
+.item {
+    width: 100%;
+}
+
+.containerItem {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 20%;
+    border: 1px solid;
+    border-color: #9DFE00;
+    border-radius: 50px;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+
+.containerBtn {
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+.describe {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.containerDescribe {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.descValue {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.trash {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 5%;
+}
+
+.trash input {
+    height: 25px;
+    width: 15px;
+}
+
+.btnBuy {
+    width: 170px;
+    height: 58px;
+    border: none;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    border-radius: 100px;
+    margin-right: 35px;
+    cursor: pointer!important;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 5%;
+}
+
+.card input {
+    width: 50%;
+    height: 35px;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 50px;
+    border-color: #9DFE00;
+}
+
+.btnBuyNft {
+    display: flex;
+    width: 50%;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 58px;
+    border: none;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    border-radius: 100px;
+    cursor: pointer!important;
+}

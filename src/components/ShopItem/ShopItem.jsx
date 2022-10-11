@@ -1,9 +1,6 @@
 import Image from "next/image";
 import styles from "./Styles.module.css";
 import { useEffect, useState } from "react";
-import * as Dialog from '@radix-ui/react-dialog';
-import * as DialogPrimitive from '@radix-ui/react-dialog';
-
 import Monkey from "../../../public/Обезьяна 1.png";
 import MonkeyCap from "../../../public/MonkeyCap.png";
 import MonkeyAngel from "../../../public/MonkeyAngel.png";
@@ -13,9 +10,7 @@ export default function ShopItem({ openModal, setImageActiveShop, setImageActive
     const[chagedImage, setchagedImage] = useState()
 
     
-    
     useEffect(() => {
-        // console.log('Image selected ->', chagedImage)
         setImageActiveShop(chagedImage)
 
     },[chagedImage])
@@ -101,10 +96,6 @@ export default function ShopItem({ openModal, setImageActiveShop, setImageActive
         <div >
  
         </div>
-                
-        
-        
-        
         
         </div>
     )

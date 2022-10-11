@@ -1,10 +1,25 @@
+import Link from "next/link";
 import Image from "next/image";
+import Router from "next/router";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 import styles from "./Styles.module.css";
 import { IoMdClose } from "react-icons/io"
 import { BsGraphUp } from "react-icons/bs"
-import { useEffect } from "react";
 
 export default function Modal({ closeModal, imageActiveshop, imageActiveModal }) {
+    const router = useRouter()
+
+
+    const img = imageActiveshop.target["data-loaded-src"]
+
+
+    const filterCart = () => {
+        router.push({
+            pathname: `/cart/aa`
+        })
+    
+    }
 
     useEffect(() => {
 
@@ -40,7 +55,7 @@ export default function Modal({ closeModal, imageActiveshop, imageActiveModal })
                             <p className={styles.describe} >appreciation:  </p>
                             <BsGraphUp size={16} color="white" />
                         </div>
-                        <button className={styles.btnBuy} >BUY</button>
+                        <button onClick={filterCart()} className={styles.btnBuy}>BUY</button>
                     </div>
                 </div>
                 
