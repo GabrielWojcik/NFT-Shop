@@ -1,10 +1,15 @@
 .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 5%;
     margin-left: 5%;
+    justify-content: space-around;
 }
 
 .card {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;

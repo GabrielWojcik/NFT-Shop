@@ -1,17 +1,21 @@
 .containerCard {
    display: flex; 
    justify-content: space-around;
-   /* margin-left: 2%; */
    margin-top: 5%;
+   width: 100%;
 }
 
 .card {
-    position: absolute;
-    width: 367px;
-    height: 214px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 300px;
     background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
     border-radius: 50px;
-    transform: translateY(70%);
+    cursor: pointer;
 }
 
 #monkey {

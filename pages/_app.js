@@ -5,11 +5,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <NavBar />
-      <Component {...pageProps} />
+      <Component {...pageProps}  />
 
     </div>
   ) 
   
 }
+
+
 
 export default MyApp

@@ -1,0 +1,25 @@
+.containerCarousel {
+    width: 100%;
+    display: flex;
+    margin-top: 5vh;
+    /* background-color: red; */
+}
+
+.containerTitle {
+    display:  flex;
+    margin-left: 10%;
+    margin-top: 5rem;
+    height: 120px;
+    width: 30%;
+    align-items: center;
+}
+
+#Title {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 128px;
+    line-height: 124px;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

@@ -1,0 +1,19 @@
+.containerCarousel {
+    border: 10px solid;
+    border-radius: 30px;
+    border-color: #FFFFFF;
+    width: 100%;
+    
+}
+.cardCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    border: 1px solid;
+    border-radius: 50px;
+    height: 100%;
+    margin-right: 15px;
+}
+
+

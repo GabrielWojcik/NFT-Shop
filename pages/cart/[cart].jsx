@@ -2,7 +2,7 @@ import Image from "next/image"
 import { useRouter } from "next/router"
 import { FaCoins } from "react-icons/fa"
 import { BsTrash } from "react-icons/bs"
-import Monkey from "../../public/Обезьяна 1.png"
+import Monkey from "../../public/Monkey.png"
 import styles from "../../styles/cart.module.css"
 
 export default function Cart() {

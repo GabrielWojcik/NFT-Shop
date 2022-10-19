@@ -1,6 +1,7 @@
+import Link from "next/link";
 import Image from "next/image"
-import NftGo from "../../../public/NFTGo svg.png";
 import styles from "./Styles.module.css";
+import NftGo from "../../../public/NFTGo svg.png";
 
 export default function NavBar() {
     return(
@@ -9,7 +10,9 @@ export default function NavBar() {
             <p>Stock</p>
             <p>Create an NFT</p>
            
-            <Image src={NftGo} width={241} height={58} />
+            <Link passHref href="/">
+                <Image src={NftGo} width={241} height={58} id={styles.logo} />
+            </Link>
             
             <p>Tops</p>
             <p>Whitelist</p>
