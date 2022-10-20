@@ -13,8 +13,9 @@ export default function Item({ data }) {
     const router = useRouter()
 
     function filtro(){
-        const data = filteredData.filter(nft => nft.id === router.query.id)
-        setFilteredData(data)
+        const nft = filteredData.filter(nft => nft.id === router.query.id)
+        setFilteredData(nft)
+        setInitialData(nft)
     }
     
 

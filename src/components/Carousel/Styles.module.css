@@ -27,3 +27,17 @@
     -webkit-filter: scale(1.5);
     filter: scale(1.5);
 }
+
+@media only screen and (max-width: 600px) {
+    .containerCard {
+        margin-top: 5rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .card {
+        margin-bottom: 5rem;
+    }
+   
+}

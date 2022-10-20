@@ -11,6 +11,22 @@
     cursor: pointer;
 }
 
+.hamburger {
+    display: none;
+}
+
 #logo {
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        justify-content: space-around;
+    }
+    .container p {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
 }

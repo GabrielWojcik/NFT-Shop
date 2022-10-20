@@ -5,6 +5,8 @@
 }
 
 
+
+
 .buttons button {
     cursor: pointer;
 }
@@ -35,4 +37,14 @@
     border: 3px solid #14D9E6;
     border-radius: 100px;
     background: #191D29;
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        justify-content: center;
+    }
+    
+    .btnBuyNft, .btnGalery {
+        width: 120px;
+    }
 }

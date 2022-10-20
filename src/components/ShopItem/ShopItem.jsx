@@ -25,14 +25,19 @@ export default function ShopItem({ openModal, setImageActiveShop, setImageActive
                 
                 <div className={styles.card}>
                     {
-                        imageActive === true ?
+                        images.map(nft => {
+                            return(
+                                <img src={nft.image}></img>
+                            )
+                        })
+                        // imageActive === true ?
                         
-                        <>
-                            {/* <img src={chagedImage.target["data-loaded-src"]} width={300} height={300} /> */}
-                            <img src={data[0].image} width={300} height={300} />
-                        </>
-                        :
-                            <img src={data[0].image} width={300} height={300} />
+                        // <>
+                        //     {/* <img src={chagedImage.target["data-loaded-src"]} width={300} height={300} /> */}
+                        //     <img src={data[0].image} width={300} height={300} />
+                        // </>
+                        // :
+                        //     <img src={data[0].image} width={300} height={300} />
                     }
                 </div>
                 <div className={styles.describe}>
