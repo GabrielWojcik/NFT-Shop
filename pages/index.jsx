@@ -16,7 +16,8 @@ export default function Home({ data }) {
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`http://localhost:3000/api/apinft`)
+  // const res = await fetch(`http://localhost:3000/api/apinft`)
+  const res = await fetch(`https://nft-shop-three.vercel.app/api/apinft`)
   const data = await res.json()
 
   // Pass data to the page via props
