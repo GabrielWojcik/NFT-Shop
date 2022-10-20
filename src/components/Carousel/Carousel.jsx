@@ -9,9 +9,9 @@ export default function Carousel({ data }) {
                 {
                     data.map(nft => {
                         return(     
-                            <div className={styles.card}>
+                            <div className={styles.card} key={nft.id}>
                                 <Link passHref href={`/item/${nft.id}`}>
-                                    <img id="monkey" src={nft.image} width={367} height={370} />
+                                    <img alt="nft image" id="monkey" src={nft.image} width={367} height={370} />
                                </Link>
                             </div>
                         )

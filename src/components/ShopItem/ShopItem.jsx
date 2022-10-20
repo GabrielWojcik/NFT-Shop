@@ -27,7 +27,7 @@ export default function ShopItem({ openModal, setImageActiveShop, setImageActive
                     {
                         images.map(nft => {
                             return(
-                                <img src={nft.image}></img>
+                                <img src={nft.image} alt="nft image" key={nft.id}></img>
                             )
                         })
                         // imageActive === true ?
@@ -55,8 +55,8 @@ export default function ShopItem({ openModal, setImageActiveShop, setImageActive
                 {
                     images.map(nft => {
                         return(
-                            <div>
-                                <img id="monkey" src={nft.image} width={367} heigth={370} />
+                            <div key={nft.id}>
+                                <img id="monkey" alt="nft image" src={nft.image} width={367} heigth={370} />
                             </div>
                         )
                     })

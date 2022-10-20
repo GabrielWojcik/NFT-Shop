@@ -16,7 +16,7 @@ export default function NavBar() {
             <p>Create an NFT</p>
            
             <Link passHref href="/">
-                <Image src={NftGo} width={241} height={58} id={styles.logo} />
+                <Image alt="nft logo" src={NftGo} width={241} height={58} id={styles.logo} />
             </Link>
                 <div className={styles.hamburger}>
                     <IoMdMenu size={45} color="#9DFE00" onClick={() => setOpenMenu(true)} />

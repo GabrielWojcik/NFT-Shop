@@ -16,7 +16,7 @@ export default function Title() {
                 <div className={styles.tagDescont}><p>-50%</p></div>
             </div>
             <div className={styles.rectangleImage}>
-                <Image src={KotNft} width={255} height={350} />
+                <Image alt="nft image" src={KotNft} width={255} height={350} />
             </div>
 
 

@@ -7,9 +7,9 @@ export default function ShopCard({ data }) {
             {
                 data.map(nft => {
                     return(
-                        <Link passHref href={`/item/${nft.id}`}>
+                        <Link passHref href={`/item/${nft.id}`} key={nft.id}>
                             <div className={styles.card}>
-                            <img id={styles.monkey} src={nft.image} width={327} height={310}/>
+                            <img id={styles.monkey} src={nft.image} alt="nft image" width={327} height={310}/>
                             </div>
                         </Link> 
                         )

@@ -44,6 +44,7 @@ export default function Modal({ closeModal, imageActiveshop, imageActiveModal })
                             src={imageActiveshop.target["data-loaded-src"]} 
                             width={200} 
                             height={200} 
+                            alt="nft image"
                             />
                             :
                             <></>

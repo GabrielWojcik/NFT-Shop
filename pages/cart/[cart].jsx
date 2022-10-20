@@ -16,7 +16,7 @@ export default function Cart() {
                 <div className={styles.item}>
                 <p id={styles.Title}>CART</p>
                     <div className={styles.containerItem}>
-                        <Image src={Monkey} width={100} height={100} />
+                        <Image alt="nft image" src={Monkey} width={100} height={100} />
                     
                     <div className={styles.describe}>
                         <div className={styles.containerDescribe}>

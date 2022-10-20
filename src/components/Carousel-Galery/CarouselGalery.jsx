@@ -1,5 +1,4 @@
 // import { Carousel } from 'react-responsive-carousel';
-import Image from 'next/image';
 import styles from "./Styles.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -35,8 +34,8 @@ export default function CarrouselGalery({ data }){
                   {
                     data.map(nft => {
                       return(
-                        <div className={styles.cardCarousel}>
-                        <img src={nft.image} width={350} height={300} />
+                        <div className={styles.cardCarousel} key={nft.id}>
+                        <img alt="nft image" src={nft.image} width={350} height={300} />
                         </div>
                       )
                     })
