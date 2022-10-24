@@ -28,3 +28,11 @@
     -webkit-filter: scale(1.5);
     filter: scale(1.5);
 }
+
+@media(max-width: 999px) {
+    .container {
+        margin-left: 0%;
+        margin-bottom: 5%;
+        gap: 35px;
+    }
+}

@@ -20,12 +20,12 @@
 }
 
 .menuOpenContainer {
- -webkit-animation-name: fadeInRight;
+ /* -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+  animation-fill-mode: both; */
     /* box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff; */
     /* -webkit-animation: scale-down-ver-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: scale-down-ver-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
@@ -37,7 +37,15 @@
     top: 0;
     
 }
-@-webkit-keyframes fadeInRight {
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInRight {
     0% {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
@@ -60,7 +68,7 @@
     -webkit-transform: none;
     transform: none;
     }
-}
+    } 
 .menuOptions h3 {
     display: flex;
     flex-direction: column;

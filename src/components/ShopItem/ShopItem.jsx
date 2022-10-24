@@ -19,7 +19,6 @@ export default function ShopItem({ openModal, setImageActiveShop, setImageActive
 
     return(
         <div className={styles.contaier}>
-
         <div className={styles.containerCards}>
             <div className={styles.containerCard}>
                 

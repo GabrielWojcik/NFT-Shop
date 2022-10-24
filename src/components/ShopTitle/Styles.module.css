@@ -16,3 +16,17 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
+@media (max-width: 999px) {
+    .containerTitle {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        margin-left: 0%;
+        align-items: center;
+    }
+    #Title {
+        text-align: center;
+        font-size: 100px;
+    }
+}
