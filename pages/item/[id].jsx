@@ -10,12 +10,15 @@ export default function Item({ data }) {
     const[imageActiveshop, setImageActiveShop] = useState()
     const[imageActiveModal, setImageActiveModal] = useState(false);
 
+    const[imageMain, setImageMain] = useState();
+
     const router = useRouter()
 
     function filtro(){
+
         const nft = filteredData.filter(nft => nft.id === router.query.id)
+        setImageMain(nft[0].image)
         setFilteredData(nft)
-        setInitialData(nft)
     }
     
 
@@ -26,6 +29,7 @@ export default function Item({ data }) {
     return(
         <div>
             <ShopItem
+            fotoPrincipal={imageMain}
             images={initialData}
             data={filteredData}
             openModal={() => setOpenModal(true)}

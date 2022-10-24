@@ -29,7 +29,7 @@ export default function CarrouselGalery({ data }){
              arrows={true}
              centerMode={true}
              infinite={true}
-             draggable={false}
+             draggable={true}
              removeArrowOnDeviceType={["tablet", "mobile"]}>
                   {
                     data.map(nft => {

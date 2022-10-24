@@ -11,15 +11,15 @@ export default function Modal({ closeModal, imageActiveshop, imageActiveModal })
     const router = useRouter()
 
 
-    const img = imageActiveshop.target["data-loaded-src"]
+    // const img = imageActiveshop.target["data-loaded-src"]
 
 
-    const filterCart = () => {
-        router.push({
-            pathname: `/cart/aa`
-        })
+    // const filterCart = () => {
+    //     router.push({
+    //         pathname: `/cart/aa`
+    //     })
     
-    }
+    // }
 
     useEffect(() => {
 
@@ -38,7 +38,7 @@ export default function Modal({ closeModal, imageActiveshop, imageActiveModal })
                 
                 <div className={styles.containerSelected}>
                     <div className={styles.boxImage}>
-                        {
+                        {/* {
                             imageActiveModal ? 
                             <Image 
                             src={imageActiveshop.target["data-loaded-src"]} 
@@ -48,7 +48,7 @@ export default function Modal({ closeModal, imageActiveshop, imageActiveModal })
                             />
                             :
                             <></>
-                        }
+                        } */}
                     </div>
                     <div className={styles.boxPrice}>
                         <p id={styles.price}>$1500,00</p>
@@ -56,7 +56,7 @@ export default function Modal({ closeModal, imageActiveshop, imageActiveModal })
                             <p className={styles.describe} >appreciation:  </p>
                             <BsGraphUp size={16} color="white" />
                         </div>
-                        <button onClick={filterCart()} className={styles.btnBuy}>BUY</button>
+                        {/* <button onClick={filterCart()} className={styles.btnBuy}>BUY</button> */}
                     </div>
                 </div>
                 
