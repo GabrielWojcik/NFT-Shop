@@ -12,7 +12,7 @@
 
 #title-item {
     font-weight: bold;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 #Title {
@@ -59,6 +59,8 @@
 .containerDescribe {
     width: 50%;
     margin-left: 5%;
+    color: white!important;
+    font-weight: bold;
 }
 
 .descValue {

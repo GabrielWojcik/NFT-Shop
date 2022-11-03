@@ -42,7 +42,7 @@ export default function NavBar() {
 
             <p>Tops</p>
             <p>Whitelist</p>
-            <p>Contacts</p>
+            <p>Cart</p>
 
 
         </div>

@@ -87,3 +87,11 @@
     cursor: pointer!important;
     color: #FFFFFF;
 }
+
+@media (max-width: 999px) {
+    .body {
+        width: 90%;
+    }
+}
+
+

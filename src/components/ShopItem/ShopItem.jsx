@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "./Styles.module.css";
 import { useEffect, useState } from "react";
 
-
 export default function ShopItem({ openModal, setImageActiveShop, setImageActiveModal, data, 
     images, fotoPrincipal }) {
     const[imageActive, setImageActive] = useState(false)
@@ -51,7 +50,9 @@ export default function ShopItem({ openModal, setImageActiveShop, setImageActive
                                 height={100} 
                                 onClick={(e) => {
                                     setchagedImage(e)
-                                    setImageActive(true)}}
+                                    setImageActive(true)
+                                    setImageActiveModal(true)
+                                }}
                                 />
                             </div>
                        )

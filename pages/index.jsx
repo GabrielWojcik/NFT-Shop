@@ -3,7 +3,7 @@ import Carousel from '../src/components/Carousel/Carousel'
 import Title from '../src/components/Title/Title'
 
 export default function Home({ data }) {
-  console.log('Data', data)
+  // console.log('Data', data)
   return (
     <div>
       <Title />
