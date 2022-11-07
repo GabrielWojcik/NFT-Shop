@@ -3,12 +3,14 @@ import styles from "./Styles.module.css";
 import { useEffect, useState } from "react";
 
 export default function ShopItem({ openModal, setImageActiveShop, setImageActiveModal, data, 
-    images, fotoPrincipal }) {
+    images, fotoPrincipal, setItemAdd }) {
     const[imageActive, setImageActive] = useState(false)
     const[chagedImage, setchagedImage] = useState()
 
 
     useEffect(() => {
+
+        console.log('data', data);
         setImageActiveShop(chagedImage)
     },[chagedImage])
 
@@ -33,7 +35,7 @@ export default function ShopItem({ openModal, setImageActiveShop, setImageActive
                     </p>
                         <button onClick={() => openModal(true)} className={styles.btnBuy}> BUY </button>
 
-                    <button className={styles.btnAdd}> ADD  </button>
+                    <button className={styles.btnAdd} onClick={() => setItemAdd(true)}> ADD  </button>
                 </div>
             </div>
                 

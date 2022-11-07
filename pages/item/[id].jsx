@@ -10,9 +10,9 @@ export default function Item({ data }) {
     const[openModal, setOpenModal] = useState(false)
     const[imageActiveshop, setImageActiveShop] = useState()
     const[imageActiveModal, setImageActiveModal] = useState(false);
-
     const[imageMain, setImageMain] = useState();
 
+    const[itemAdd, setItemAdd] = useState(false);
     const router = useRouter()
 
     // console.log('NO ID', imageActiveshop)
@@ -23,23 +23,18 @@ export default function Item({ data }) {
         const nft = filteredData.filter(nft => nft.id === router.query.id)
         setImageMain(nft[0].image)
         setFilteredData(nft)
-        console.log('nft', nft)
     }
     
-
+    
     useEffect(() => {
-        // if(imageActiveModal) {
-        //     const nft = filteredData.filter(nft => nft.id === imageActiveshop.target["data-loaded-src"] )
-        //     console.log('nft filtrado ->', nft)
-        // }
-
-        // console.log('IMAGEM MODAL', imageActiveModal)
-        filtro()
-    },[imageActiveModal])
+            filtro()
+    },[imageActiveModal, itemAdd])
 
     return(
         <div>
-            <ItemCard />
+            <ItemCard
+            itemAdd={itemAdd}
+            />
 
             <ShopItem
             fotoPrincipal={imageMain}
@@ -48,7 +43,7 @@ export default function Item({ data }) {
             openModal={() => setOpenModal(true)}
             setImageActiveShop={(e) => setImageActiveShop(e)}
             setImageActiveModal={() => setImageActiveModal(true)}
-
+            setItemAdd={() => setItemAdd(true)}
             />
             {
             
