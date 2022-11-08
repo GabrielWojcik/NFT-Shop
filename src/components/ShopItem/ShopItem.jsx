@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./Styles.module.css";
 import { useEffect, useState } from "react";
+import ToastDemo from "../Toast/Toast";
 
 export default function ShopItem({ openModal, setImageActiveShop, setImageActiveModal, data, 
     images, fotoPrincipal, setItemAdd }) {
@@ -35,7 +36,10 @@ export default function ShopItem({ openModal, setImageActiveShop, setImageActive
                     </p>
                         <button onClick={() => openModal(true)} className={styles.btnBuy}> BUY </button>
 
-                    <button className={styles.btnAdd} onClick={() => setItemAdd(true)}> ADD  </button>
+                    {/* <button className={styles.btnAdd} onClick={() => setItemAdd(true)}> ADD  </button> */}
+                    <ToastDemo 
+                    data={data}
+                    onClick={() => setItemAdd(true)} />
                 </div>
             </div>
                 
