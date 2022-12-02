@@ -2,6 +2,9 @@ import * as React from 'react';
 import { styled, keyframes } from '@stitches/react';
 import { violet, blackA, mauve, slate, green } from '@radix-ui/colors';
 import * as ToastPrimitive from '@radix-ui/react-toast';
+import Image from 'next/image';
+import styles from "./Styles.module.css"
+
 
 const VIEWPORT_PADDING = 25;
 
@@ -39,6 +42,8 @@ const StyledViewport = styled(ToastPrimitive.Viewport, {
 const StyledToast = styled(ToastPrimitive.Root, {
   backgroundColor: 'white',
   borderRadius: 6,
+  borderColor:"#9DFE00",
+  border: "1px solid",
   boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
   padding: 15,
   display: 'grid',
@@ -142,10 +147,12 @@ const Button = styled('button', {
   },
 });
 
-export default function ToastDemo ({ data }) {
+export default function ToastDemo ({ data, setItemAdd }) {
   const [open, setOpen] = React.useState(false);
   const eventDateRef = React.useRef(new Date());
   const timerRef = React.useRef(0);
+
+
 
   React.useEffect(() => {
     console.log('data toast', data)
@@ -154,34 +161,35 @@ export default function ToastDemo ({ data }) {
 
   return (
     <ToastProvider swipeDirection="right">
-      <Button
+      <button
+       className={styles.btnBuy}
         onClick={() => {
           setOpen(false);
+          setItemAdd
           window.clearTimeout(timerRef.current);
           timerRef.current = window.setTimeout(() => {
             eventDateRef.current = oneWeekAway();
             setOpen(true);
-          }, 100);
+          }, 300);
         }}
       >
         Add to cart
-      </Button>
+      </button>
 
       <Toast open={open} onOpenChange={setOpen}>
         <ToastTitle>Adicionado ao carrinho: {data[0].name}</ToastTitle>
         <ToastDescription >
-            {/* <Image src={data[0].image} width={20} height={32} /> */}
             {/* <p>Item adicionado ao carrinho</p> */}
-            <p>{data[0].name}</p>
-          {/* <time dateTime={eventDateRef.current.toISOString()}>
-            {prettyDate(eventDateRef.current)}
-          </time> */}
+            <div className={styles.containerToast}>
+              <Image src={`/${data[0].image}`} width={80} height={80} />
+              <p>${data[0].value}</p>
+            </div>
         </ToastDescription>
-        <ToastAction asChild altText="Goto schedule to undo">
+        {/* <ToastAction asChild altText="Goto schedule to undo">
           <Button variant="green" size="small">
-            Ok
+            X
           </Button>
-        </ToastAction>
+        </ToastAction> */}
       </Toast>
       <ToastViewport />
     </ToastProvider>

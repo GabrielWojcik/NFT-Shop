@@ -15,8 +15,6 @@ export default function Item({ data }) {
     const[itemAdd, setItemAdd] = useState(false);
     const router = useRouter()
 
-    // console.log('NO ID', imageActiveshop)
-
 
     function filtro(){
 
@@ -37,6 +35,7 @@ export default function Item({ data }) {
             />
 
             <ShopItem
+            itemAdd={itemAdd}
             fotoPrincipal={imageMain}
             images={initialData}
             data={filteredData}

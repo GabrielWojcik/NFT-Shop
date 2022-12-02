@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import ToastDemo from "../Toast/Toast";
 
 export default function ShopItem({ openModal, setImageActiveShop, setImageActiveModal, data, 
-    images, fotoPrincipal, setItemAdd }) {
+    images, fotoPrincipal, setItemAdd, itemAdd }) {
     const[imageActive, setImageActive] = useState(false)
     const[chagedImage, setchagedImage] = useState()
 
@@ -36,8 +36,8 @@ export default function ShopItem({ openModal, setImageActiveShop, setImageActive
                     </p>
                         <button onClick={() => openModal(true)} className={styles.btnBuy}> BUY </button>
 
-                    {/* <button className={styles.btnAdd} onClick={() => setItemAdd(true)}> ADD  </button> */}
                     <ToastDemo 
+                    setItemAdd={setItemAdd}
                     data={data}
                     onClick={() => setItemAdd(true)} />
                 </div>

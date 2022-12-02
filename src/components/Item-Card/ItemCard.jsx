@@ -6,6 +6,7 @@ export default function ItemCard({ itemAdd }) {
     const[count, setCount] = useState(0)
 
     useEffect(() => {
+        console.log('item add', itemAdd)
         if(itemAdd) {
             setCount(count + 1)
         }

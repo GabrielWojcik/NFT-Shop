@@ -1,11 +1,15 @@
+import Head from 'next/head'
 import Buttons from '../src/components/Buttons/Buttons'
 import Carousel from '../src/components/Carousel/Carousel'
 import Title from '../src/components/Title/Title'
 
 export default function Home({ data }) {
-  // console.log('Data', data)
+  
   return (
     <div>
+      <Head>
+            <title>NFT GO</title>
+      </Head>
       <Title />
       <Buttons />
       <Carousel data={data} />
